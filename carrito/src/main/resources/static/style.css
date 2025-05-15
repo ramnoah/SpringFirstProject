@@ -1,31 +1,106 @@
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-}
-
-h1, h2 {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f4f8;
+    margin: 0;
+    padding: 0;
     color: #333;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    color: #0077cc;
+}
+
+.producto-form {
     margin-bottom: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
 }
 
-th, td {
-    border: 1px solid #ccc;
+form input {
+    margin: 5px 10px 10px 0;
     padding: 8px;
-    text-align: left;
+    width: 200px;
 }
 
-input[type="text"], input[type="number"] {
-    width: 100%;
+form button {
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.producto-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-card input {
+    margin: 5px 0;
     padding: 6px;
+    width: 100%;
     box-sizing: border-box;
 }
 
-form input, form button {
-    margin: 5px 0;
-    padding: 8px;
+.producto-card .acciones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.producto-card .acciones button {
+    flex: 1;
+    margin: 0 4px;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.editar {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.eliminar {
+    background-color: #dc3545;
+    color: white;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
 }

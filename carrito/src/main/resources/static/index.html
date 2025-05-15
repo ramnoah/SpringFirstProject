@@ -2,33 +2,35 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>CRUD de Productos</title>
+    <title>Mi Tienda</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Lista de productos</h1>
-<table id="tabla-productos">
-    <thead>
-    <tr>
-        <th>ID</th>
-        <th>Nombre</th>
-        <th>Descripción</th>
-        <th>Precio</th>
-        <th>Stock</th>
-        <th>Acciones</th>
-    </tr>
-    </thead>
-    <tbody></tbody>
-</table>
+<header>
+    <h1>🛍️ Mi Tienda Virtual</h1>
+</header>
 
-<h2>Agregar nuevo producto</h2>
-<form id="formulario">
-    <input type="text" id="nombre" placeholder="Nombre" required>
-    <input type="text" id="descripcion" placeholder="Descripción" required>
-    <input type="number" id="precio" placeholder="Precio" required>
-    <input type="number" id="stock" placeholder="Stock" required>
-    <button type="submit">Agregar</button>
-</form>
+<main>
+    <section class="producto-form">
+        <h2>Agregar nuevo producto</h2>
+        <form id="formulario">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="text" id="descripcion" placeholder="Descripción" required>
+            <input type="number" id="precio" placeholder="Precio" required>
+            <input type="number" id="stock" placeholder="Stock" required>
+            <button type="submit">Agregar</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Productos en la tienda</h2>
+        <div id="productos-container" class="productos-grid"></div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Mi Tienda. Todos los derechos reservados.</p>
+</footer>
 
 <script src="script.js"></script>
 </body>

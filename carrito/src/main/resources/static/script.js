@@ -27,23 +27,25 @@ document.addEventListener('DOMContentLoaded', () => {
 async function cargarProductos() {
     const res = await fetch(API_URL);
     const productos = await res.json();
-    const tbody = document.querySelector('#tabla-productos tbody');
-    tbody.innerHTML = '';
+    const contenedor = document.getElementById('productos-container');
+    contenedor.innerHTML = '';
 
     productos.forEach(p => {
-        const fila = document.createElement('tr');
-        fila.innerHTML = `
-            <td>${p.id}</td>
-            <td><input type="text" value="${p.nombre}" id="nombre-${p.id}"></td>
-            <td><input type="text" value="${p.descripcion}" id="descripcion-${p.id}"></td>
-            <td><input type="number" value="${p.precio}" id="precio-${p.id}"></td>
-            <td><input type="number" value="${p.stock}" id="stock-${p.id}"></td>
-            <td>
-                <button onclick="editarProducto(${p.id})">Guardar</button>
-                <button onclick="eliminarProducto(${p.id})">Eliminar</button>
-            </td>
+        const card = document.createElement('div');
+        card.className = 'producto-card';
+
+        card.innerHTML = `
+            <input type="text" value="${p.nombre}" id="nombre-${p.id}">
+            <input type="text" value="${p.descripcion}" id="descripcion-${p.id}">
+            <input type="number" value="${p.precio}" id="precio-${p.id}">
+            <input type="number" value="${p.stock}" id="stock-${p.id}">
+            <div class="acciones">
+                <button class="editar" onclick="editarProducto(${p.id})">Guardar</button>
+                <button class="eliminar" onclick="eliminarProducto(${p.id})">Eliminar</button>
+            </div>
         `;
-        tbody.appendChild(fila);
+
+        contenedor.appendChild(card);
     });
 }
 
