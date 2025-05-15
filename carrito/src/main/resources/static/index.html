@@ -2,36 +2,17 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Tienda</title>
+    <title>Bienvenido</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<header>
-    <h1>🛍️ Mi Tienda Virtual</h1>
-</header>
-
-<main>
-    <section class="producto-form">
-        <h2>Agregar nuevo producto</h2>
-        <form id="formulario">
-            <input type="text" id="nombre" placeholder="Nombre" required>
-            <input type="text" id="descripcion" placeholder="Descripción" required>
-            <input type="number" id="precio" placeholder="Precio" required>
-            <input type="number" id="stock" placeholder="Stock" required>
-            <button type="submit">Agregar</button>
-        </form>
-    </section>
-
-    <section>
-        <h2>Productos en la tienda</h2>
-        <div id="productos-container" class="productos-grid"></div>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2025 Mi Tienda. Todos los derechos reservados.</p>
-</footer>
-
-<script src="script.js"></script>
+<body class="centered">
+<div class="container">
+    <h2>Bienvenido a Mi Tienda Virtual</h2>
+    <p>¿Quién eres?</p>
+    <div class="opciones">
+        <button onclick="window.location.href='cliente.html'">Cliente 🛍️</button>
+        <button onclick="window.location.href='login.html'">Dueño 🔐</button>
+    </div>
+</div>
 </body>
 </html>

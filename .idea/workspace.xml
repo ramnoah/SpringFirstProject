@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ec60bde-36d5-4320-abc1-3db1f35f706f" name="Changes" comment="" />
+    <list default="true" id="5ec60bde-36d5-4320-abc1-3db1f35f706f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/carrito/src/main/resources/static/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carrito/src/main/resources/static/admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carrito/src/main/resources/static/cliente.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carrito/src/main/resources/static/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carrito/src/main/resources/static/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carrito/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/carrito/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carrito/src/main/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/carrito/src/main/resources/static/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -94,7 +103,7 @@
       <workItem from="1747263353228" duration="2743000" />
       <workItem from="1747266280555" duration="2550000" />
       <workItem from="1747270063557" duration="1056000" />
-      <workItem from="1747283053605" duration="1139000" />
+      <workItem from="1747283053605" duration="2989000" />
     </task>
     <servers />
   </component>
